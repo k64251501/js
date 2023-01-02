@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> HTML rage slider</title>
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+        <input type="range" id="rng">
+        <input type="text" id="txt">
+        <script>
+            let r=document.querySelector("#rng");
+            let txt=document.querySelector("#txt");
+            r.oninput=function(){
+                txt.value=this.value;
+            }
+        </script>
+
+    </body>
+    </html>
